@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --galileo-purple: #7B1FA2;
+  --galileo-blue: #0288D1;
+  --galileo-green: #00C853;
+  --galileo-orange: #FF6F00;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(90deg, var(--galileo-purple), var(--galileo-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
