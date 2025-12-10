@@ -16,14 +16,12 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://galileo-research.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Galileo Research Tool - Innovative TV-Beitragsthemen entdecken',
     description: 'Das intelligente Recherchetool für bildstarke, relevante TV-Beitragsthemen',
-    url: 'https://galileo-research.vercel.app',
     siteName: 'Galileo Research Tool',
     locale: 'de_DE',
     type: 'website',

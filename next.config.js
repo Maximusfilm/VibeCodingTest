@@ -5,8 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Wenn du auf username.github.io/repo-name deployst, uncomment die nächste Zeile:
-  // basePath: '/VibeCodingTest',
+  basePath: '/VibeCodingTest',
 }
 
 module.exports = nextConfig
