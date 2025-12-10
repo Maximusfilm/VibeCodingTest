@@ -2,8 +2,17 @@
 
 Eine moderne **Website** für Redakteure des deutschen TV-Magazins **Galileo**, um neue, bildstarke und relevante Beitragsthemen zu finden.
 
-**🌐 Live Website:** [galileo-research.vercel.app](https://galileo-research.vercel.app)
+## 🌐 Live Demo
 
+Die Website ist auf **GitHub Pages** deployed und öffentlich zugänglich:
+
+**→ [username.github.io/VibeCodingTest](https://username.github.io/VibeCodingTest)**
+
+## 🚀 Quick Deploy
+
+Deploye deine eigene Version mit einem Klick:
+
+[![Deploy to GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-success?style=for-the-badge&logo=github)](https://github.com/your-username/VibeCodingTest/actions)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-repo/VibeCodingTest)
 
 ## 🎯 Projektbeschreibung
@@ -128,17 +137,32 @@ npm run lint
 
 ## 🌐 Deployment
 
-Das Projekt ist für **Vercel** optimiert und kann mit einem Klick deployed werden:
+Das Projekt unterstützt mehrere Deployment-Optionen:
+
+### GitHub Pages (Automatisch) 🎯
+
+Die Website wird **automatisch** auf GitHub Pages deployed bei jedem Push zu `main`/`master`.
+
+**Setup (einmalig):**
+1. Gehe zu **Settings** → **Pages** in deinem Repository
+2. Bei "Source" wähle: **GitHub Actions**
+3. Fertig! 🎉
+
+Der GitHub Actions Workflow (`.github/workflows/deploy.yml`) übernimmt den Rest.
+
+**📖 Detaillierte Anleitung:** [GITHUB_PAGES.md](./GITHUB_PAGES.md)
+
+### Weitere Deployment-Optionen:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-repo/VibeCodingTest)
 
-**Detaillierte Deployment-Anleitung:** Siehe [DEPLOYMENT.md](./DEPLOYMENT.md)
+- ✅ **GitHub Pages** (Standard) - kostenlos, automatisches Deployment
+- **Vercel** - optimale Performance, Edge Functions
+- **Netlify** - Alternative zu Vercel
+- **Docker** - containerisierte Bereitstellung
+- **VPS/Server** - für eigene Server
 
-### Deployment-Optionen:
-- ✅ **Vercel** (empfohlen) - automatisches Deployment bei jedem Push
-- Netlify - Alternative zu Vercel
-- Docker - containerisierte Bereitstellung
-- VPS/Server - für eigene Server
+**📖 Weitere Details:** [DEPLOYMENT.md](./DEPLOYMENT.md)
 
 ## 📁 Projektstruktur
 
