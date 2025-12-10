@@ -1,6 +1,10 @@
 # Galileo Research Tool 🔬📺
 
-Ein modernes Recherchetool für Redakteure des deutschen TV-Magazins **Galileo**, um neue, bildstarke und relevante Beitragsthemen zu finden.
+Eine moderne **Website** für Redakteure des deutschen TV-Magazins **Galileo**, um neue, bildstarke und relevante Beitragsthemen zu finden.
+
+**🌐 Live Website:** [galileo-research.vercel.app](https://galileo-research.vercel.app)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-repo/VibeCodingTest)
 
 ## 🎯 Projektbeschreibung
 
@@ -74,16 +78,32 @@ Das Galileo Research Tool unterstützt junge Fernsehredakteure dabei, innovative
 - **✅ Filter "Nur neue Themen"**:
   - Zeige nur Themen, die noch nicht im Fernsehen liefen
 
-## 🚀 Installation & Start
+## 🚀 Schnellstart
 
-### Voraussetzungen
+### Als Website nutzen 🌐
+
+Die einfachste Methode ist, die **Live-Website** zu besuchen:
+
+**→ [galileo-research.vercel.app](https://galileo-research.vercel.app)**
+
+Die Website ist öffentlich zugänglich und sofort einsatzbereit!
+
+### Lokal entwickeln 💻
+
+Wenn du das Projekt lokal ausführen oder anpassen möchtest:
+
+#### Voraussetzungen
 
 - Node.js (Version 18+)
 - npm oder yarn
 
-### Installation
+#### Installation
 
 ```bash
+# Repository klonen
+git clone <repository-url>
+cd VibeCodingTest
+
 # Dependencies installieren
 npm install
 
@@ -93,7 +113,7 @@ npm run dev
 
 Die Anwendung läuft dann auf [http://localhost:3000](http://localhost:3000)
 
-### Weitere Befehle
+#### Weitere Befehle
 
 ```bash
 # Production Build erstellen
@@ -101,16 +121,38 @@ npm run build
 
 # Production Server starten
 npm start
+
+# Linting
+npm run lint
 ```
+
+## 🌐 Deployment
+
+Das Projekt ist für **Vercel** optimiert und kann mit einem Klick deployed werden:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-repo/VibeCodingTest)
+
+**Detaillierte Deployment-Anleitung:** Siehe [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+### Deployment-Optionen:
+- ✅ **Vercel** (empfohlen) - automatisches Deployment bei jedem Push
+- Netlify - Alternative zu Vercel
+- Docker - containerisierte Bereitstellung
+- VPS/Server - für eigene Server
 
 ## 📁 Projektstruktur
 
 ```
 galileo-research-tool/
 ├── app/                    # Next.js App Router
-│   ├── layout.tsx         # Root Layout
-│   ├── page.tsx           # Hauptseite
-│   └── globals.css        # Globale Styles
+│   ├── layout.tsx         # Root Layout mit SEO
+│   ├── page.tsx           # Landing Page
+│   ├── globals.css        # Globale Styles
+│   ├── manifest.ts        # PWA Manifest
+│   ├── research/          # Research Tool Seite
+│   │   └── page.tsx
+│   └── about/             # About Seite
+│       └── page.tsx
 ├── components/            # React Komponenten
 │   ├── SearchBar.tsx      # Suchleiste
 │   ├── TagFilter.tsx      # Schlagwörter-Filter
@@ -118,11 +160,23 @@ galileo-research-tool/
 │   ├── TopicCard.tsx      # Themen-Karte
 │   └── TopicDetail.tsx    # Detail-Ansicht
 ├── data/                  # Daten
-│   └── mockTopics.ts      # Beispiel-Themen
+│   └── mockTopics.ts      # 6 Beispiel-Themen
 ├── types/                 # TypeScript Typen
 │   └── index.ts           # Typ-Definitionen
+├── public/                # Statische Assets
+│   └── robots.txt         # SEO
+├── vercel.json            # Vercel-Konfiguration
+├── DEPLOYMENT.md          # Deployment-Anleitung
 └── README.md             # Diese Datei
 ```
+
+### Website-Struktur
+
+Die Website besteht aus drei Hauptseiten:
+
+1. **Landing Page** (`/`) - Hero-Section, Features, Call-to-Action
+2. **Research Tool** (`/research`) - Das eigentliche Recherchetool
+3. **About** (`/about`) - Informationen über das Tool
 
 ## 🎨 Design-System
 
