@@ -64,22 +64,23 @@ export default function ResearchPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-purple-800">
       {/* Navigation */}
-      <nav className="bg-white/10 backdrop-blur-md border-b border-white/20 sticky top-0 z-50">
+      <nav className="glass-effect-strong sticky top-0 z-50 border-b border-white/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <Link href="/" className="text-2xl font-bold text-white">
-              Galileo Research
+            <Link href="/" className="text-2xl font-bold text-white flex items-center gap-2">
+              <span className="text-3xl">🔬</span>
+              <span className="gradient-text">Galileo Research</span>
             </Link>
             <div className="flex items-center space-x-4">
               <Link
                 href="/research"
-                className="px-4 py-2 rounded-lg text-white bg-white/20 transition-colors"
+                className="px-4 py-2 rounded-lg text-white bg-orange-500/30 transition-all font-semibold"
               >
                 Research Tool
               </Link>
               <Link
                 href="/about"
-                className="px-4 py-2 rounded-lg text-white hover:bg-white/20 transition-colors"
+                className="px-4 py-2 rounded-lg text-white hover:bg-orange-500/20 transition-all font-semibold"
               >
                 Über das Tool
               </Link>
@@ -89,22 +90,22 @@ export default function ResearchPage() {
       </nav>
 
       {/* Header */}
-      <header className="bg-white/10 backdrop-blur-md border-b border-white/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <header className="glass-effect border-b border-white/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-4xl font-bold text-white mb-2">
-                Galileo Research Tool
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
+                <span className="gradient-text">Galileo Research Tool</span>
               </h1>
-              <p className="text-purple-200">
+              <p className="text-purple-100 text-lg">
                 Finde bildstarke, relevante Themen für die nächste Sendung
               </p>
             </div>
-            <div className="text-right">
-              <div className="text-3xl font-bold text-white">
+            <div className="text-right glass-effect rounded-xl p-4 border border-orange-500/30">
+              <div className="text-4xl font-bold gradient-text">
                 {filteredAndSortedTopics.length}
               </div>
-              <div className="text-sm text-purple-200">Themen gefunden</div>
+              <div className="text-sm text-purple-100 font-semibold">Themen gefunden</div>
             </div>
           </div>
         </div>
